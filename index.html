@@ -1,167 +1,60 @@
-# <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
+<title>SatheAchi.com</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sathe Achi.com</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-}
-
-header{
-background:#0d6efd;
-color:white;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:15px;
-font-weight:bold;
-}
-
-.banner{
-background:linear-gradient(to right,#0d6efd,#3ea6ff);
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-.banner h1{
-font-size:35px;
-}
-
-.btn{
-background:white;
-color:#0d6efd;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
-margin-top:20px;
-}
-
-.products{
-padding:30px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-text-align:center;
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.price{
-color:red;
-font-size:20px;
-font-weight:bold;
-margin:10px 0;
-}
-
-.buy{
-background:#0d6efd;
-color:white;
-padding:10px;
-border:none;
-border-radius:5px;
-width:100%;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
-<h2>Sathe Achi.com</h2>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
-</nav>
-
+<h1>SatheAchi.com</h1>
+<p>বিশ্বস্ততার সাথে অনলাইনে কেনাকাটা করুন</p>
 </header>
 
+
 <section class="banner">
-
-<h1>Trusted Shopping Partner</h1>
-
-<p>সব ধরনের পণ্য এক জায়গায়</p>
-
-<a class="btn" href="#">Shop Now</a>
-
+<h2>আপনার পছন্দের পণ্য এখন অনলাইনে</h2>
+<button onclick="scrollProducts()">পণ্য দেখুন</button>
 </section>
 
-<section class="products">
+
+<h2 class="title">আমাদের পণ্য</h2>
+
+<div class="products" id="products">
 
 <div class="card">
-<img src="https://via.placeholder.com/250x250">
-<h3>T-Shirt</h3>
-<p class="price">৳650</p>
-<button class="buy">Buy Now</button>
+<img src="images/product1.jpg">
+<h3>Premium T-Shirt</h3>
+<p>Price: 650 টাকা</p>
+<button onclick="order('Premium T-Shirt')">
+Order Now
+</button>
 </div>
+
 
 <div class="card">
-<img src="https://via.placeholder.com/250x250">
-<h3>Saree</h3>
-<p class="price">৳1200</p>
-<button class="buy">Buy Now</button>
+<img src="images/product2.jpg">
+<h3>Half Silk Saree</h3>
+<p>Price: 999 টাকা</p>
+<button onclick="order('Half Silk Saree')">
+Order Now
+</button>
 </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/250x250">
-<h3>Watch</h3>
-<p class="price">৳850</p>
-<button class="buy">Buy Now</button>
+
 </div>
 
+
+<section class="contact">
+<h2>যোগাযোগ</h2>
+<p>WhatsApp: 01XXXXXXXXX</p>
+<p>SatheAchi.com</p>
 </section>
 
-<footer>
 
-<h3>Sathe Achi.com</h3>
-
-<p>WhatsApp: 01828522577</p>
-
-<p>Cash On Delivery Available</p>
-
-<p>© 2026 All Rights Reserved</p>
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
